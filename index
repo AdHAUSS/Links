@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <meta name="theme-color" content="#000000">
+    <meta name="forced-color-adjust" content="none">
+    <meta name="darkreader-lock">
+    <meta name="format-detection" content="telephone=no">
+    <title>PoltroConfort - Premium Links</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+	:root {
+   	    color-scheme: dark;
+	}
+
+	html {
+  	    
+	    forced-color-adjust: none;
+	}
+
+	body {
+   	    padding-top: 80px;
+	    color: #000000 !important;
+	    forced-color-adjust: none;
+	}
+
+	@media (prefers-color-scheme: dark) {
+  	    html, body {
+      		background-color: #000000 !important;
+        	color: #000000 !important;
+        }
+
+        img {
+            filter: none !important;
+        }
+	svg {
+    	    filter: none !important;
+	}
+        }
+
+
+        html, body {
+    	font-family: 'Inter', sans-serif;
+   /* Fundo preto com um leve degradê central para dar profundidade/textura */
+    background: radial-gradient(circle at center, #121212 0%, #000000 100%);
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+	}
+
+	/* Neomorphism Card Style */
+        .neomorph-card {
+	    position:relative;
+            background: rgba(255,255,255,0.08);
+	    backdrop-filter: blur(14px);
+	    -webkit-backdrop-filter: blur(14px);
+	    border-radius:18px;
+	    border:1px solid rgba(255,255,255,0.12);
+
+            box-shadow: 
+                0 15px 35px rgba(0,0,0,0.35),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+
+            
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+	    cursor: pointer;
+	    overflow:hidden;
+        }
+
+        .neomorph-card:hover {
+          transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(82, 196, 211, 0.2); /* Glow azul sutil no card */
+    border-color: #52c4d3; /* Borda acende em azul */
+
+        }
+
+        .neomorph-card:active {
+            transform: scale(0.97);
+            box-shadow: inset 0 3px 10px rgba(0,0,0,0.35);
+        }
+
+        /* Neomorphism Button/Icon Style */
+        .neomorph-btn {
+            background-color: #6F8FAF;
+            box-shadow: 0 10px 20px rgba(82, 196, 211, 0.2); /* Glow azul sutil no card */
+            border: #52c4d3; /* Borda acende em azul */
+            transition: all 0.2s ease;
+        }
+
+        .neomorph-btn:hover {
+            transform: translateY(-2px);
+            color: #FCD34D; /* Yellow-300 */
+        }
+
+        /* Animated Golden Border */
+        .gold-border-container {
+            position: relative;
+            display: inline-block;
+	    animation: float 4s ease-in-out infinite;
+	 }
+
+     	   @keyframes float{
+	   0%{ transform: translateY(0px);}
+	   50%{ transform: translateY(-6px);}
+	   100%{ transform: translateY(0px);}
+        }
+
+        .gold-border-glow {
+           position: absolute;
+           inset: -4px;
+           border-radius: 50%;
+          /* Alterado para o seu azul #52c4d3 */
+           background: linear-gradient(45deg, #52c4d3, #2a8e9c, #52c4d3);
+           opacity: 0.6;
+           filter: blur(4px);
+           animation: pulse-gold 2s infinite;
+        }
+
+        @keyframes pulse-gold {
+            0% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+            100% { opacity: 0.5; transform: scale(1); }
+        }
+        
+        @keyframes fadeUp {
+   	    from {
+        	opacity: 0;
+       		transform: translateY(30px);
+   	    }
+   	    to {
+       		opacity: 1;
+        	transform: translateY(0);
+   	    }
+        }
+
+        /* Utility for image placement */
+        .card-image-container {
+            flex-shrink: 0;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            overflow: hidden;
+
+	    background:#5f7f9e;
+
+	  box-shadow: 0 10px 20px rgba(82, 196, 211, 0.2); /* Glow azul sutil no card */
+    border-color: #52c4d3; /* Borda acende em azul */
+
+	    display:flex;
+	    align-items:center;
+	    justify-content:center;
+        }
+
+
+/* Coloque isso no final do seu bloco <style> */
+#browser-warning {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 420px;
+    background: #111;
+    color: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 9999;
+}
+#browser-warning button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4285F4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* --- NOVA ESTRATÉGIA: ANULAÇÃO DE INVERSÃO --- */
+/* --- BLOCO FINAL: CORREÇÃO "ESPELHO" PARA SAMSUNG DARK --- */
+
+/* 1. Inverte a Borda e o Glow (Truque para o Samsung não deixar vermelho) */
+html.samsung-fix .gold-border-container .relative,
+html.samsung-fix .gold-border-glow {
+    filter: invert(100%) hue-rotate(180deg) !important;
+    -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+    forced-color-adjust: none !important;
+}
+
+/* 2. O PULO DO GATO: Inverte a imagem de volta para a cor original */
+/* Como o container acima está invertido, invertemos a logo denovo para anular */
+html.samsung-fix .gold-border-container img {
+    filter: invert(100%) hue-rotate(180deg) !important;
+    -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+/* 3. Ajustes de Fundo e Texto permanecem iguais */
+html.samsung-fix body {
+    background-color: #6F8FAF !important;
+    background-image: radial-gradient(circle at top,#8FAECC 0%,#6F8FAF 45%,#5f7f9e 100%) !important;
+}
+
+html.samsung-fix h1, 
+html.samsung-fix h2, 
+html.samsung-fix p {
+    color: #ffffff !important;
+}
+
+/* Garante que o brilho original continue funcionando nos outros browsers */
+.gold-border-glow {
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FCD34D, #F59E0B, #FCD34D);
+    opacity: 0.45;
+    filter: blur(2px);
+    animation: pulse-gold 2s infinite;
+}
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-12 px-4">
+
+<div id="browser-warning" style="display:none;">
+  Para melhor visualização deste site, recomendamos abrir no Google Chrome.
+  <br>
+  <button>Abrir no Chrome</button>
+</div>
+
+    <!-- Main Container -->
+    <main class="w-full max-w-md mx-auto flex flex-col items-center">
+
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center mb-10 text-center animate-fade-in-down">
+            
+            <!-- Profile Image -->
+            <div class="gold-border-container mb-6">
+                <div class="gold-border-glow"></div>
+                <div class="relative w-32 h-32 rounded-full p-1 bg-[#52c4d3] z-10">
+                    <img 
+                        src="LOGO1.svg" 
+                        alt="Logo AdHauss" 
+                        class="w-full h-full rounded-full object-contain border-4 border-[#0b2545] bg-[#0b2545]"
+                        referrerpolicy="no-referrer"
+                    >
+                </div>
+            </div>
+
+            <!-- Name & Role -->
+            <h1 class="text-3xl font-bold text-white mb-2 tracking-wide drop-shadow-md">
+                AdHAUSS
+            </h1>
+            <p class="text-blue-100 text-sm font-medium tracking-wider uppercase opacity-90">
+                Desing Estratégico
+            </p>             
+                
+            </div>
+        
+
+        <!-- Links List -->
+        <div class="w-full max-w-md mx-auto flex flex-col gap-4" style="animation: fadeUp 0.8s ease;">
+            
+            <!-- Card 1 -->
+            <a href="https://drive.google.com/file/d/1hbvtZZghXKJS_YuR5HrimxA3-63R2hA6/preview" class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
+                <!-- Left Side -->
+                <div class="flex flex-col items-start justify-center flex-1 pr-4 z-10">
+                    <h2 class="text-white font-bold text-lg mb-1 group-hover:text-yellow-300 transition-colors">
+                        Site
+                    </h2>
+                    <div class="flex items-center text-sm text-gray-200 group-hover:text-white transition-colors">
+                        <span>ADHAUSS</span>
+                     </div>
+                </div>
+                <!-- Right Side -->
+                <div class="card-image-container z-10">
+                    <img src="LOGO1.svg" alt="Logo AdHauss" loading="lazy" class="w-full h-full object-contain" referrerpolicy="no-referrer">
+                </div>
+                <!-- Hover Overlay -->
+                <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="https://wa.me/556296577357?text=Olá,%20vim%20pelo%20Instagram,%20quero%20informações." class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
+                <div class="flex flex-col items-start justify-center flex-1 pr-4 z-10">
+                    <h2 class="text-white font-bold text-lg mb-1 group-hover:text-yellow-300 transition-colors">
+                        FALE CONOSCO
+                    </h2>
+                    <div class="flex items-center text-sm text-gray-200 group-hover:text-white transition-colors">
+                        <span>Fale com um especialista</span>
+                    </div>
+                </div>
+                <div class="card-image-container z-10">
+                    <img src="iconewpp.png" alt="Whatsapp Adhauss" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                </div>
+                <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="https://www.instagram.com/adhauss.ofc" class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
+                <div class="flex flex-col items-start justify-center flex-1 pr-4 z-10">
+                    <h2 class="text-white font-bold text-lg mb-1 group-hover:text-yellow-300 transition-colors">
+                        INSTAGRAM OFICIAL
+                    </h2>
+                    <div class="flex items-center text-sm text-gray-200 group-hover:text-white transition-colors">
+                        <span>Siga nosso perfil</span>
+                        </div>
+                </div>
+                <div class="card-image-container z-10">
+                    <img src="iconeinsta.png" alt="Instagram PoltroConfort" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                </div>
+                <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            </a>
+              
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center">
+
+	<p class="text-sm text-blue-200 mb-2">
+	© AdHAUSS
+	</p>
+
+	<p class="text-xs text-blue-100 opacity-70">
+	Eleve sua marca para outro nível!
+	</p>
+
+	<p class="text-xs mt-2 opacity-60">
+	Produzido por
+	<a href="https://wa.me/556296577357" 	class="underline">
+	AdHAUSS
+		</a>
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Simple Animation Script -->
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const htmlElement = document.documentElement;
+    // Detecção simplificada e mais direta
+    const isSamsung = /SamsungBrowser/i.test(navigator.userAgent);
+
+    if (isSamsung) {
+        // Injeta a classe de correção imediatamente
+        htmlElement.classList.add('samsung-fix');
+        
+        // Exibe o banner (que agora você confirmou que o botão funciona)
+        const banner = document.getElementById("browser-warning");
+        if (banner) banner.style.display = "block";
+    }
+
+    // Botão do Chrome
+    const btnChrome = document.querySelector("#browser-warning button");
+    if (btnChrome) {
+        btnChrome.onclick = function (e) {
+            e.preventDefault();
+            const url = window.location.href.replace(/^https?:\/\//, "");
+            window.location.href = "intent://" + url + "#Intent;scheme=https;package=com.android.chrome;end";
+        };
+    }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
