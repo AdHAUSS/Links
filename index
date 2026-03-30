@@ -335,7 +335,7 @@ html.samsung-fix p {
                         </div>
                 </div>
                 <div class="card-image-container z-10">
-                    <img src="TK.png" alt="TIKTOK ADHAUSS" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                    <img src="tk.png" alt="TIKTOK ADHAUSS" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
                 </div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             </a>
