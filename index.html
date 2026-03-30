@@ -53,15 +53,20 @@
 
         html, body {
     	font-family: 'Inter', sans-serif;
-    background-color: #000000;
-   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('textura.png');
+    /* Adicionamos o 'no-repeat' para evitar que a imagem duplique se for pequena */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('textura.png') no-repeat center center;
+    
+    background-color: #000000; /* Cor de segurança */
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
     color-scheme: dark;
     -webkit-font-smoothing: antialiased;
-	}
-
+    
+    /* Importante para mobile: garante que o fundo ocupe a tela toda */
+    min-height: 100vh;
+        }
+		
 	/* Neomorphism Card Style */
         .neomorph-card {
 	    position:relative;
