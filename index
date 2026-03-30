@@ -274,7 +274,7 @@ html.samsung-fix p {
         <div class="w-full max-w-md mx-auto flex flex-col gap-4" style="animation: fadeUp 0.8s ease;">
             
             <!-- Card 1 -->
-            <a href="https://drive.google.com/file/d/1hbvtZZghXKJS_YuR5HrimxA3-63R2hA6/preview" class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
+            <a href="https://bit.ly/ADHAUSS" class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
                 <!-- Left Side -->
                 <div class="flex flex-col items-start justify-center flex-1 pr-4 z-10">
                     <h2 class="text-white font-bold text-lg mb-1 group-hover:text-yellow-300 transition-colors">
@@ -286,14 +286,14 @@ html.samsung-fix p {
                 </div>
                 <!-- Right Side -->
                 <div class="card-image-container z-10">
-                    <img src="LOGO1.svg" alt="Logo AdHauss" loading="lazy" class="w-full h-full object-contain" referrerpolicy="no-referrer">
+                    <img src="LOGO01.svg" alt="Logo AdHauss" loading="lazy" class="w-full h-full object-contain" referrerpolicy="no-referrer">
                 </div>
                 <!-- Hover Overlay -->
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             </a>
 
             <!-- Card 2 -->
-            <a href="https://wa.me/556296577357?text=Olá,%20vim%20pelo%20Instagram,%20quero%20informações." class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
+            <a href="https://wa.me/556296577357?text=Olá,%20vim%20pela%20Linkpage,%20quero%20informações." class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
                 <div class="flex flex-col items-start justify-center flex-1 pr-4 z-10">
                     <h2 class="text-white font-bold text-lg mb-1 group-hover:text-yellow-300 transition-colors">
                         FALE CONOSCO
@@ -319,11 +319,26 @@ html.samsung-fix p {
                         </div>
                 </div>
                 <div class="card-image-container z-10">
-                    <img src="iconeinsta.png" alt="Instagram PoltroConfort" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                    <img src="iconeinsta.png" alt="Instagram ADHAUSS" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
                 </div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             </a>
-              
+
+    <!-- Card 4 -->
+            <a href="https://www.tiktok.com/@adhauss?_r=1&_t=ZS-957qaYBYp3Y" class="neomorph-card group flex items-center justify-between w-full p-4 rounded-2xl relative overflow-hidden">
+                <div class="flex flex-col items-start justify-center flex-1 pr-4 z-10">
+                    <h2 class="text-white font-bold text-lg mb-1 group-hover:text-yellow-300 transition-colors">
+                        TIKTOK OFICIAL
+                    </h2>
+                    <div class="flex items-center text-sm text-gray-200 group-hover:text-white transition-colors">
+                        <span>Siga nosso perfil</span>
+                        </div>
+                </div>
+                <div class="card-image-container z-10">
+                    <img src="TK.png" alt="TIKTOK ADHAUSS" loading="lazy" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                </div>
+                <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            </a>
         </div>
 
         <!-- Footer -->
